@@ -83,3 +83,7 @@ python followup_experiment.py   # ~1 min
 | Follow-up experiment and Figure 3 | `followup_experiment.py` | `results/followup_experiment.csv`, `figures/figure3_followup.png` |
 
 Everything is deterministic (random seed 678), so a rerun gives the same numbers.
+
+## AI Usage Disclosure
+
+Generative AI was used as a coding assistant throughout this project. Most of the code, particularly data extraction, preprocessing, cleaning, and implementation of ML pipelines, was written with AI assistance. AI was also used for debugging, understanding unfamiliar libraries and techniques, and organizing and refining the repository to make the code cleaner, more maintainable, and reproducible. The project idea, research questions, experimental direction, and interpretation of results were my own. I reviewed the generated code manually wherever possible and used a separate AI session for additional code verification. I guided the experiments, evaluated the outputs, and made the final methodological decisions and conclusions.
