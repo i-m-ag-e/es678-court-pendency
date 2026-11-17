@@ -1,0 +1,5 @@
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+same chance for everyone,211614,0.2495,0.3506,0.1975,0.5855,0.2495,0.5,0.2594
+lookup table,211614,0.2495,0.3619,0.221,0.7075,0.3392,0.6846,0.2664
+logistic regression,211614,0.2495,0.3172,0.2053,0.7083,0.363,0.7207,0.2434
+gradient boosting,211614,0.2495,0.376,0.2208,0.6378,0.3525,0.6804,0.2136

@@ -1,0 +1,4 @@
+# The DDL data are not ours to share
+data/
+.venv/
+__pycache__/

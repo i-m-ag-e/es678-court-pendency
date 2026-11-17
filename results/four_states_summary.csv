@@ -1,0 +1,6 @@
+state,honest,shuffled,predicted,actual
+"West Bengal
+(main)",0.7239,0.8324,0.5654,0.4408
+Delhi,0.649,0.7594,0.3108,0.3393
+Assam,0.7207,0.8558,0.3172,0.2495
+Uttarakhand,0.686,0.7841,0.2375,0.4347

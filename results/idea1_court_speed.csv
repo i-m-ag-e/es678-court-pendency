@@ -1,0 +1,4 @@
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+lookup table,159798,0.3838,0.5072,0.2204,0.6231,0.5778,0.7308,0.6475
+logistic regression without court speed,159798,0.3838,0.4828,0.2151,0.6052,0.5797,0.7169,0.6939
+logistic regression with court speed,159798,0.3838,0.4653,0.2144,0.6019,0.5819,0.7165,0.6886

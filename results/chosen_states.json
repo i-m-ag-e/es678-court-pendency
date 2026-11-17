@@ -1,0 +1,19 @@
+{
+  "main": "16",
+  "others": [
+    "26",
+    "06",
+    "15"
+  ],
+  "names": {
+    "16": "West Bengal",
+    "26": "Delhi",
+    "06": "Assam",
+    "15": "Uttarakhand",
+    "02": "Andhra Pradesh",
+    "11": "Orissa",
+    "29": "Telangana",
+    "18": "Chhattisgarh",
+    "07": "Jharkhand"
+  }
+}

@@ -1,0 +1,7 @@
+year predicted,model,share_stuck,avg_prediction,brier,pr_auc
+2016,logistic regression,0.4973,0.5592,0.2087,0.6926
+2016,"logistic regression, shifted",0.4973,0.5756,0.2107,0.6926
+2017,logistic regression,0.4408,0.5654,0.2235,0.6377
+2017,"logistic regression, shifted",0.4408,0.5247,0.2154,0.6377
+2018 Jan-Jun,logistic regression,0.3838,0.4828,0.2151,0.5797
+2018 Jan-Jun,"logistic regression, shifted",0.3838,0.4834,0.2152,0.5797

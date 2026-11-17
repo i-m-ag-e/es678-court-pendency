@@ -1,0 +1,16 @@
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+same chance for everyone,92634,0.3281,0.269,0.2239,0.6413,0.3281,0.5,0.1902
+"lookup table, smoothing 1",92634,0.3281,0.3787,0.2129,0.6106,0.4149,0.6606,0.3217
+"lookup table, smoothing 10",92634,0.3281,0.3707,0.2059,0.5926,0.4266,0.6668,0.4334
+"lookup table, smoothing 100",92634,0.3281,0.3512,0.2003,0.5831,0.4444,0.6826,0.3381
+"logistic regression, C=0.0001",92634,0.3281,0.2964,0.2197,0.6318,0.398,0.5492,0.4684
+"logistic regression, C=0.0003",92634,0.3281,0.3072,0.2136,0.6177,0.4496,0.6068,0.5518
+"logistic regression, C=0.001",92634,0.3281,0.317,0.2065,0.6002,0.4779,0.6524,0.5948
+"logistic regression, C=0.003",92634,0.3281,0.3237,0.2027,0.5892,0.4782,0.6738,0.5756
+"logistic regression, C=0.01",92634,0.3281,0.3282,0.2011,0.5824,0.4685,0.6877,0.5079
+"logistic regression, C=0.1",92634,0.3281,0.32,0.1974,0.5712,0.4747,0.7122,0.4433
+"logistic regression, C=1.0",92634,0.3281,0.2949,0.1908,0.5577,0.5119,0.7339,0.5035
+"gradient boosting, step 0.05, 15 leaves, best after 44 rounds",92634,0.3281,0.3566,0.192,0.5597,0.4783,0.7176,0.4228
+"gradient boosting, step 0.05, 63 leaves, best after 36 rounds",92634,0.3281,0.349,0.1917,0.5598,0.4896,0.7211,0.4888
+"gradient boosting, step 0.2, 15 leaves, best after 9 rounds",92634,0.3281,0.3524,0.192,0.5606,0.4864,0.7191,0.4462
+"gradient boosting, step 0.2, 63 leaves, best after 8 rounds",92634,0.3281,0.3513,0.1927,0.5624,0.4852,0.718,0.5065

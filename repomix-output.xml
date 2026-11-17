@@ -1,0 +1,1463 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+The content has been processed where empty lines have been removed.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: logs_test/*
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Empty lines have been removed from all files
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+figures/
+  figure1_data.pdf
+results/
+  cases_per_state_and_year.csv
+  chosen_states.json
+  idea1_court_speed.csv
+  idea2_first_year_shift.csv
+  main_state_settings.json
+  main_state_test_2017.csv
+  main_state_validation_2016.csv
+  screened_states.json
+  state_26_validation_2016.csv
+  state_selection.csv
+  table1.csv
+.gitignore
+build_dataset.py
+common.py
+followup_experiment.py
+prepare_data.py
+README.md
+requirements.txt
+run_models.py
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="results/cases_per_state_and_year.csv">
+year,state_code,cases,open_cases,state
+2010,01,866279,61595,Maharashtra
+2010,02,119359,3092,Andhra Pradesh
+2010,03,507691,20051,Karnataka
+2010,04,217526,5345,Kerala
+2010,05,28541,2490,Himachal Pradesh
+2010,06,47906,2225,Assam
+2010,07,42990,7566,Jharkhand
+2010,08,140198,85998,Bihar
+2010,09,190334,31153,Rajasthan
+2010,10,170958,16578,Tamil Nadu
+2010,11,83523,33003,Orissa
+2010,12,12457,3101,Jammu and Kashmir
+2010,13,576840,211546,Uttar Pradesh
+2010,14,114535,1029,Haryana
+2010,15,30326,2768,Uttarakhand
+2010,16,117658,36811,West Bengal
+2010,17,328872,20803,Gujarat
+2010,18,10230,446,Chhattisgarh
+2010,19,311,27,Mizoram
+2010,20,5806,305,Tripura
+2010,21,916,332,Meghalaya
+2010,22,105421,1115,Punjab
+2010,23,331567,12091,Madhya Pradesh
+2010,24,172,0,Sikkim
+2010,25,685,61,Manipur
+2010,26,94972,6900,Delhi
+2010,27,10317,70,Chandigarh
+2010,29,98549,3529,Telangana
+2010,30,25292,638,Goa
+2010,31,480,0,Diu and Daman
+2010,32,616,0,DNH at Silvasa
+2011,01,870832,74136,Maharashtra
+2011,02,158237,4548,Andhra Pradesh
+2011,03,627571,28229,Karnataka
+2011,04,237080,8316,Kerala
+2011,05,44381,4360,Himachal Pradesh
+2011,06,72233,3366,Assam
+2011,07,56304,8503,Jharkhand
+2011,08,172378,97608,Bihar
+2011,09,251013,42420,Rajasthan
+2011,10,221802,18366,Tamil Nadu
+2011,11,102265,38405,Orissa
+2011,12,23164,4790,Jammu and Kashmir
+2011,13,763701,245092,Uttar Pradesh
+2011,14,180259,2103,Haryana
+2011,15,39370,3078,Uttarakhand
+2011,16,146130,40055,West Bengal
+2011,17,373473,20169,Gujarat
+2011,18,38090,989,Chhattisgarh
+2011,19,665,25,Mizoram
+2011,20,8114,307,Tripura
+2011,21,1305,155,Meghalaya
+2011,22,166574,1657,Punjab
+2011,23,395004,16203,Madhya Pradesh
+2011,24,423,1,Sikkim
+2011,25,1176,81,Manipur
+2011,26,104186,8962,Delhi
+2011,27,15006,131,Chandigarh
+2011,29,112767,4012,Telangana
+2011,30,23888,685,Goa
+2011,31,589,0,Diu and Daman
+2011,32,670,0,DNH at Silvasa
+2011,33,3,0,Ladakh
+2012,01,965560,109864,Maharashtra
+2012,02,180811,8786,Andhra Pradesh
+2012,03,724072,37885,Karnataka
+2012,04,335315,17954,Kerala
+2012,05,62039,6855,Himachal Pradesh
+2012,06,91339,5756,Assam
+2012,07,76004,12061,Jharkhand
+2012,08,217541,117249,Bihar
+2012,09,330951,54669,Rajasthan
+2012,10,268919,28333,Tamil Nadu
+2012,11,126070,48312,Orissa
+2012,12,28960,6323,Jammu and Kashmir
+2012,13,961480,270165,Uttar Pradesh
+2012,14,223754,1609,Haryana
+2012,15,63004,4871,Uttarakhand
+2012,16,205429,56633,West Bengal
+2012,17,453985,41840,Gujarat
+2012,18,76565,3835,Chhattisgarh
+2012,19,1866,151,Mizoram
+2012,20,10902,552,Tripura
+2012,21,2719,247,Meghalaya
+2012,22,246800,2937,Punjab
+2012,23,443869,26507,Madhya Pradesh
+2012,24,886,0,Sikkim
+2012,25,2325,151,Manipur
+2012,26,114464,12488,Delhi
+2012,27,19580,202,Chandigarh
+2012,29,136802,8527,Telangana
+2012,30,26638,895,Goa
+2012,31,1332,0,Diu and Daman
+2012,32,790,0,DNH at Silvasa
+2012,33,12,0,Ladakh
+2013,01,1039581,172189,Maharashtra
+2013,02,195473,12870,Andhra Pradesh
+2013,03,896535,65091,Karnataka
+2013,04,409259,37626,Kerala
+2013,05,69771,11077,Himachal Pradesh
+2013,06,111690,10267,Assam
+2013,07,87633,21471,Jharkhand
+2013,08,286735,144481,Bihar
+2013,09,437010,78768,Rajasthan
+2013,10,327097,48750,Tamil Nadu
+2013,11,159041,61411,Orissa
+2013,12,27459,8658,Jammu and Kashmir
+2013,13,1004559,308965,Uttar Pradesh
+2013,14,285856,2815,Haryana
+2013,15,84734,7284,Uttarakhand
+2013,16,239820,63754,West Bengal
+2013,17,569400,60612,Gujarat
+2013,18,59888,9202,Chhattisgarh
+2013,19,1308,79,Mizoram
+2013,20,12791,989,Tripura
+2013,21,2027,402,Meghalaya
+2013,22,310403,5746,Punjab
+2013,23,556845,55650,Madhya Pradesh
+2013,24,3400,5,Sikkim
+2013,25,4544,306,Manipur
+2013,26,146827,17507,Delhi
+2013,27,24487,269,Chandigarh
+2013,29,169119,17312,Telangana
+2013,30,29499,1499,Goa
+2013,31,1391,0,Diu and Daman
+2013,32,1416,0,DNH at Silvasa
+2013,33,19,0,Ladakh
+2014,01,1114737,237529,Maharashtra
+2014,02,246828,28435,Andhra Pradesh
+2014,03,1029441,98774,Karnataka
+2014,04,557128,60623,Kerala
+2014,05,88507,17182,Himachal Pradesh
+2014,06,131610,17508,Assam
+2014,07,107528,27413,Jharkhand
+2014,08,355055,161345,Bihar
+2014,09,447139,100876,Rajasthan
+2014,10,401418,74081,Tamil Nadu
+2014,11,164049,67610,Orissa
+2014,12,29587,10398,Jammu and Kashmir
+2014,13,1167900,342212,Uttar Pradesh
+2014,14,396449,8980,Haryana
+2014,15,105319,11527,Uttarakhand
+2014,16,254380,81688,West Bengal
+2014,17,633923,57307,Gujarat
+2014,18,131190,17779,Chhattisgarh
+2014,19,714,176,Mizoram
+2014,20,13701,1550,Tripura
+2014,21,4890,528,Meghalaya
+2014,22,374592,12555,Punjab
+2014,23,681486,99920,Madhya Pradesh
+2014,24,4911,1,Sikkim
+2014,25,13019,533,Manipur
+2014,26,172409,25781,Delhi
+2014,27,27899,597,Chandigarh
+2014,29,183129,33668,Telangana
+2014,30,33592,2371,Goa
+2014,31,990,0,Diu and Daman
+2014,32,1069,0,DNH at Silvasa
+2014,33,27,0,Ladakh
+2015,01,1259036,318307,Maharashtra
+2015,02,269049,47189,Andhra Pradesh
+2015,03,1063633,138735,Karnataka
+2015,04,683450,108071,Kerala
+2015,05,120239,23668,Himachal Pradesh
+2015,06,155744,24850,Assam
+2015,07,136885,35844,Jharkhand
+2015,08,378305,176673,Bihar
+2015,09,585688,150683,Rajasthan
+2015,10,461290,102673,Tamil Nadu
+2015,11,192927,88829,Orissa
+2015,12,50341,16280,Jammu and Kashmir
+2015,13,1721962,472274,Uttar Pradesh
+2015,14,507084,32986,Haryana
+2015,15,87826,16320,Uttarakhand
+2015,16,381017,116200,West Bengal
+2015,17,658015,79674,Gujarat
+2015,18,162186,25775,Chhattisgarh
+2015,19,1134,431,Mizoram
+2015,20,12127,1521,Tripura
+2015,21,5482,640,Meghalaya
+2015,22,413919,26512,Punjab
+2015,23,671773,143766,Madhya Pradesh
+2015,24,4732,12,Sikkim
+2015,25,14851,770,Manipur
+2015,26,209976,42845,Delhi
+2015,27,29257,1356,Chandigarh
+2015,29,195023,51649,Telangana
+2015,30,40025,3696,Goa
+2015,31,1581,0,Diu and Daman
+2015,32,1261,0,DNH at Silvasa
+2015,33,58,0,Ladakh
+2016,01,1253768,448025,Maharashtra
+2016,02,273082,77921,Andhra Pradesh
+2016,03,1074358,208443,Karnataka
+2016,04,809819,202797,Kerala
+2016,05,110985,32821,Himachal Pradesh
+2016,06,155943,37136,Assam
+2016,07,130751,43249,Jharkhand
+2016,08,389051,192627,Bihar
+2016,09,559176,194038,Rajasthan
+2016,10,505604,143983,Tamil Nadu
+2016,11,229001,120406,Orissa
+2016,12,42756,19722,Jammu and Kashmir
+2016,13,2076121,674602,Uttar Pradesh
+2016,14,572847,85338,Haryana
+2016,15,92937,23514,Uttarakhand
+2016,16,353949,141543,West Bengal
+2016,17,735394,127103,Gujarat
+2016,18,179927,38765,Chhattisgarh
+2016,19,1039,564,Mizoram
+2016,20,13772,2836,Tripura
+2016,21,5260,915,Meghalaya
+2016,22,442910,58972,Punjab
+2016,23,743362,216057,Madhya Pradesh
+2016,24,5075,25,Sikkim
+2016,25,15727,1345,Manipur
+2016,26,308537,80060,Delhi
+2016,27,29782,3791,Chandigarh
+2016,29,204123,77130,Telangana
+2016,30,31481,5544,Goa
+2016,31,1589,0,Diu and Daman
+2016,32,1006,0,DNH at Silvasa
+2016,33,128,0,Ladakh
+2017,01,1314965,580749,Maharashtra
+2017,02,309346,116821,Andhra Pradesh
+2017,03,1100310,290516,Karnataka
+2017,04,806106,277695,Kerala
+2017,05,146048,45146,Himachal Pradesh
+2017,06,214503,52486,Assam
+2017,07,175810,60982,Jharkhand
+2017,08,479259,267301,Bihar
+2017,09,913171,257247,Rajasthan
+2017,10,624243,212848,Tamil Nadu
+2017,11,299934,170043,Orissa
+2017,12,67300,31280,Jammu and Kashmir
+2017,13,2391896,830302,Uttar Pradesh
+2017,14,593351,153967,Haryana
+2017,15,118039,49462,Uttarakhand
+2017,16,444120,181469,West Bengal
+2017,17,768727,206046,Gujarat
+2017,18,192181,52300,Chhattisgarh
+2017,19,1936,802,Mizoram
+2017,20,12566,3536,Tripura
+2017,21,7588,1199,Meghalaya
+2017,22,563399,123822,Punjab
+2017,23,816343,299375,Madhya Pradesh
+2017,24,4561,324,Sikkim
+2017,25,15548,1593,Manipur
+2017,26,387146,121714,Delhi
+2017,27,33211,9219,Chandigarh
+2017,29,228752,114730,Telangana
+2017,30,32446,7656,Goa
+2017,31,1558,0,Diu and Daman
+2017,32,903,0,DNH at Silvasa
+2017,33,247,0,Ladakh
+2018,01,1374670,761016,Maharashtra
+2018,02,317917,178971,Andhra Pradesh
+2018,03,1101515,437135,Karnataka
+2018,04,705613,321563,Kerala
+2018,05,315195,87550,Himachal Pradesh
+2018,06,212765,98775,Assam
+2018,07,275310,82163,Jharkhand
+2018,08,612675,405365,Bihar
+2018,09,865734,333052,Rajasthan
+2018,10,658724,307315,Tamil Nadu
+2018,11,256311,196212,Orissa
+2018,12,86291,43362,Jammu and Kashmir
+2018,13,2550912,1194745,Uttar Pradesh
+2018,14,641501,276023,Haryana
+2018,15,151216,81720,Uttarakhand
+2018,16,473084,205205,West Bengal
+2018,17,765934,254518,Gujarat
+2018,18,217706,87675,Chhattisgarh
+2018,19,1365,714,Mizoram
+2018,20,12430,6091,Tripura
+2018,21,4038,1366,Meghalaya
+2018,22,573146,240771,Punjab
+2018,23,812987,377061,Madhya Pradesh
+2018,24,4078,713,Sikkim
+2018,25,14821,3088,Manipur
+2018,26,403869,168227,Delhi
+2018,27,35242,12030,Chandigarh
+2018,29,236422,149627,Telangana
+2018,30,39453,15475,Goa
+2018,31,1644,0,Diu and Daman
+2018,32,1298,0,DNH at Silvasa
+2018,33,433,0,Ladakh
+</file>
+
+<file path="results/chosen_states.json">
+{
+  "main": "16",
+  "others": [
+    "26",
+    "06",
+    "15"
+  ],
+  "names": {
+    "16": "West Bengal",
+    "26": "Delhi",
+    "06": "Assam",
+    "15": "Uttarakhand",
+    "02": "Andhra Pradesh",
+    "11": "Orissa",
+    "29": "Telangana",
+    "18": "Chhattisgarh",
+    "07": "Jharkhand"
+  }
+}
+</file>
+
+<file path="results/idea1_court_speed.csv">
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+lookup table,159798,0.3838,0.5072,0.2204,0.6231,0.5778,0.7308,0.6475
+logistic regression without court speed,159798,0.3838,0.4828,0.2151,0.6052,0.5797,0.7169,0.6939
+logistic regression with court speed,159798,0.3838,0.4653,0.2144,0.6019,0.5819,0.7165,0.6886
+</file>
+
+<file path="results/idea2_first_year_shift.csv">
+year predicted,model,share_stuck,avg_prediction,brier,pr_auc
+2016,logistic regression,0.4973,0.5592,0.2087,0.6926
+2016,"logistic regression, shifted",0.4973,0.5756,0.2107,0.6926
+2017,logistic regression,0.4408,0.5654,0.2235,0.6377
+2017,"logistic regression, shifted",0.4408,0.5247,0.2154,0.6377
+2018 Jan-Jun,logistic regression,0.3838,0.4828,0.2151,0.5797
+2018 Jan-Jun,"logistic regression, shifted",0.3838,0.4834,0.2152,0.5797
+</file>
+
+<file path="results/main_state_settings.json">
+{
+  "state": "16",
+  "logistic_regression_C": 0.0003
+}
+</file>
+
+<file path="results/main_state_test_2017.csv">
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+same chance for everyone,434829,0.4408,0.5461,0.2576,0.7084,0.4408,0.5,0.4437
+lookup table,434829,0.4408,0.586,0.2261,0.646,0.6633,0.7462,0.7074
+logistic regression,434829,0.4408,0.5654,0.2235,0.6371,0.6377,0.7239,0.6928
+gradient boosting,434829,0.4408,0.5736,0.2197,0.6318,0.5798,0.7169,0.5737
+</file>
+
+<file path="results/main_state_validation_2016.csv">
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+same chance for everyone,351787,0.4973,0.5434,0.2521,0.6974,0.4973,0.5,0.4599
+"lookup table, smoothing 1",351787,0.4973,0.6266,0.2286,0.7492,0.6353,0.7261,0.6026
+"lookup table, smoothing 10",351787,0.4973,0.6195,0.222,0.7125,0.6432,0.7375,0.6075
+"lookup table, smoothing 100",351787,0.4973,0.6033,0.2139,0.6671,0.6554,0.7447,0.6224
+"logistic regression, C=0.0001",351787,0.4973,0.5465,0.2118,0.6124,0.681,0.7299,0.7386
+"logistic regression, C=0.0003",351787,0.4973,0.5592,0.2087,0.6049,0.6926,0.7373,0.7664
+"logistic regression, C=0.001",351787,0.4973,0.5729,0.2093,0.6123,0.6903,0.7404,0.7738
+"logistic regression, C=0.003",351787,0.4973,0.5833,0.2106,0.631,0.668,0.7393,0.7264
+"logistic regression, C=0.01",351787,0.4973,0.5924,0.212,0.663,0.6452,0.7384,0.541
+"logistic regression, C=0.1",351787,0.4973,0.6015,0.216,0.7389,0.6339,0.7366,0.479
+"logistic regression, C=1.0",351787,0.4973,0.6035,0.219,0.7777,0.6325,0.7342,0.4641
+"gradient boosting, step 0.05, 15 leaves, best after 19 rounds",351787,0.4973,0.6,0.2121,0.6152,0.6506,0.727,0.5753
+"gradient boosting, step 0.05, 63 leaves, best after 15 rounds",351787,0.4973,0.5943,0.2115,0.6138,0.6507,0.7286,0.6178
+"gradient boosting, step 0.2, 15 leaves, best after 4 rounds",351787,0.4973,0.597,0.2131,0.617,0.6479,0.7224,0.6588
+"gradient boosting, step 0.2, 63 leaves, best after 4 rounds",351787,0.4973,0.5967,0.21,0.6109,0.6519,0.7306,0.5892
+"single tree, depth 3",351787,0.4973,0.5761,0.2519,1.0332,0.5834,0.6588,0.4693
+"single tree, depth 6",351787,0.4973,0.5586,0.2598,1.0596,0.5923,0.6585,0.4911
+"single tree, depth 10",351787,0.4973,0.5684,0.2427,1.0469,0.6258,0.7013,0.6024
+"single tree, depth 15",351787,0.4973,0.5541,0.2484,1.0787,0.6098,0.6905,0.5843
+"random forest, 100 trees, min leaf 50",351787,0.4973,0.5999,0.2102,0.618,0.6965,0.7452,0.7515
+"random forest, 100 trees, min leaf 500",351787,0.4973,0.5854,0.2124,0.6157,0.6943,0.7341,0.7975
+LEAK: logistic regression + purpose of latest hearing,351787,0.4973,0.5694,0.1998,0.584,0.7309,0.7633,0.8342
+LEAK: logistic regression + law filed under,351787,0.4973,0.8138,0.3159,0.915,0.6805,0.7121,0.8042
+</file>
+
+<file path="results/screened_states.json">
+{
+  "16": "West Bengal",
+  "02": "Andhra Pradesh",
+  "29": "Telangana",
+  "26": "Delhi",
+  "11": "Orissa",
+  "06": "Assam",
+  "18": "Chhattisgarh",
+  "07": "Jharkhand",
+  "15": "Uttarakhand"
+}
+</file>
+
+<file path="results/state_26_validation_2016.csv">
+model,cases,share_stuck,avg_prediction,brier,log_loss,pr_auc,ranking_score,stuck_among_top10pct
+same chance for everyone,308086,0.3549,0.3762,0.2294,0.6514,0.3549,0.5,0.3608
+"lookup table, smoothing 1",308086,0.3549,0.5263,0.2876,0.871,0.4352,0.6219,0.5199
+"lookup table, smoothing 10",308086,0.3549,0.5201,0.2801,0.8319,0.4394,0.6272,0.4853
+"lookup table, smoothing 100",308086,0.3549,0.5057,0.2667,0.7636,0.4484,0.6281,0.5198
+"logistic regression, C=0.0001",308086,0.3549,0.3284,0.2212,0.6323,0.4423,0.6107,0.5017
+"logistic regression, C=0.0003",308086,0.3549,0.3379,0.2173,0.6223,0.4621,0.6371,0.495
+"logistic regression, C=0.001",308086,0.3549,0.3609,0.2191,0.624,0.4669,0.6531,0.486
+"logistic regression, C=0.003",308086,0.3549,0.3838,0.2273,0.645,0.4686,0.6602,0.5006
+"logistic regression, C=0.01",308086,0.3549,0.4059,0.2397,0.6897,0.4669,0.6612,0.5025
+"logistic regression, C=0.1",308086,0.3549,0.4488,0.2579,0.8008,0.4637,0.6606,0.4968
+"logistic regression, C=1.0",308086,0.3549,0.4877,0.2708,0.944,0.4619,0.6604,0.4726
+"gradient boosting, step 0.05, 15 leaves, best after 5 rounds",308086,0.3549,0.416,0.2218,0.635,0.4537,0.6405,0.525
+"gradient boosting, step 0.05, 63 leaves, best after 6 rounds",308086,0.3549,0.4242,0.2194,0.6296,0.471,0.6596,0.5373
+"gradient boosting, step 0.2, 15 leaves, best after 1 rounds",308086,0.3549,0.4122,0.2216,0.6346,0.456,0.6436,0.5213
+"gradient boosting, step 0.2, 63 leaves, best after 2 rounds",308086,0.3549,0.4428,0.2213,0.6327,0.4737,0.6584,0.5265
+</file>
+
+<file path="results/state_selection.csv">
+code,state,biggest_jump_in_filings,pct_unclear_status,pct_2017_watched_two_years,quick_decisions_2013_vs_normal,quick_decisions_2014_vs_normal,labelled_2017_cases,no_sudden_jumps,few_unclear,2017_followed_long_enough,training_years_complete,no_reorganisation,passes_all
+16,West Bengal,1.5,1.14,98.4,0.97,0.94,434829,True,True,True,True,True,True
+26,Delhi,1.47,0.1,98.8,1.0,1.0,382296,True,True,True,True,True,True
+06,Assam,1.38,0.31,99.2,1.02,0.96,211614,True,True,True,True,True,True
+15,Uttarakhand,1.34,0.2,98.0,0.98,1.23,115248,True,True,True,True,True,True
+02,Andhra Pradesh,1.26,0.05,99.5,0.72,0.92,307510,True,True,True,False,False,False
+11,Orissa,1.31,1.42,99.3,0.55,0.77,285376,True,True,True,False,True,False
+29,Telangana,1.24,0.12,99.8,0.98,1.01,228052,True,True,True,True,False,False
+18,Chhattisgarh,2.19,2.4,98.2,0.22,0.92,180266,False,True,True,False,True,False
+07,Jharkhand,1.34,0.28,99.4,0.76,0.94,173909,True,True,True,False,True,False
+</file>
+
+<file path="results/table1.csv">
+model,check 2016 brier,check 2016 pr_auc,test 2017 brier,test 2017 pr_auc
+same chance for everyone,0.252,0.497,0.258,0.441
+lookup table,0.214,0.655,0.226,0.663
+logistic regression,0.209,0.693,0.224,0.638
+gradient boosting,0.21,0.652,0.22,0.58
+</file>
+
+<file path=".gitignore">
+# The DDL data are not ours to share
+data/
+.venv/
+__pycache__/
+</file>
+
+<file path="build_dataset.py">
+"""Step 2 of 4: decide which cases were stuck, choose the states, build the features (~10 minutes).
+For every screened state:
+  * status: decided (has a decision date), open (no decision date, outcome recorded as missing),
+    or unclear (dropped);
+  * download date of each court: courts were downloaded at different times, so it is taken as
+    the date by which 99% of the court's open cases had last been heard (district-wide if the
+    court has fewer than 30 open cases);
+  * label: stuck = no decision within two years of filing; a case gets a label only if it was
+    watched for two years (plus a 60-day safety margin) before its court's download date;
+  * the checks used to choose states (all fixed before any model was fitted).
+For the states that pass, it saves cases + labels + features to data/processed/, prints the
+facts quoted in the paper's data section, and draws Figure 1 for the main state.
+"""
+import time
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from common import (EXTRACTED, FIGURES, PROCESSED, RESULTS, SAFETY_MARGIN, TWO_YEARS, build_features, clean_code,
+                    clean_text, load_json, save_json, show)
+COLUMNS = ["ddl_case_id", "year", "state_code", "dist_code", "court_no", "judge_position",
+           "female_defendant", "female_petitioner", "female_adv_def", "female_adv_pet",
+           "type_name", "purpose_name", "disp_name", "date_of_filing", "date_of_decision", "date_last_list"]
+REORGANISED = {"02", "29"}            # Andhra Pradesh and Telangana split in June 2014
+TRAIN_YEARS, TEST_YEAR = [2013, 2014], 2017
+def to_date(s):
+    d = pd.to_datetime(s, format="%Y-%m-%d", errors="coerce")
+    return d.where((d >= "2010-01-01") & (d < "2021-01-01"))      # impossible years become missing
+def load_cases(code):
+    parts = [pd.read_parquet(f, columns=COLUMNS, filters=[("state_code", "==", code)])
+             for f in sorted(EXTRACTED.glob("cases_*.parquet"))]
+    df = pd.concat(parts, ignore_index=True)
+    df["year"] = df["year"].astype(int)
+    return df
+def add_labels(df):
+    keys = pd.read_csv(EXTRACTED / "keys" / "disp_name_key.csv", dtype=str)
+    missing_outcome = keys.loc[keys["disp_name_s"].str.strip().str.lower() == "disposition var missing"]
+    missing_outcome = set(missing_outcome["year"] + "|" + clean_code(missing_outcome["disp_name"]))
+    df["filed"] = to_date(df["date_of_filing"])
+    df["decided_on"] = to_date(df["date_of_decision"])
+    last_hearing = to_date(df["date_last_list"])
+    decided = df["decided_on"].notna() & (df["decided_on"] >= df["filed"])
+    still_open = (df["date_of_decision"].isna() & last_hearing.notna()
+                  & (df["year"].astype(str) + "|" + clean_code(df["disp_name"])).isin(missing_outcome))
+    df["status"] = np.select([decided, still_open], ["decided", "open"], "unclear")
+    df.loc[df["filed"].isna(), "status"] = "unclear"
+    # each court's download date
+    open_cases = df[df["status"] == "open"].assign(last_hearing=last_hearing)
+    court = open_cases.groupby(["dist_code", "court_no"])["last_hearing"].agg(
+        court_date=lambda s: s.quantile(0.99), n="size").reset_index()
+    court = court[court["n"] >= 30]
+    district = open_cases.groupby("dist_code")["last_hearing"].quantile(0.99).rename("district_date").reset_index()
+    df = df.merge(court[["dist_code", "court_no", "court_date"]], on=["dist_code", "court_no"], how="left")
+    df = df.merge(district, on="dist_code", how="left")
+    df["downloaded"] = (df["court_date"].fillna(df["district_date"])
+                        .fillna(open_cases["last_hearing"].quantile(0.99)))
+    deadline = df["filed"] + pd.Timedelta(days=TWO_YEARS)
+    df["labelled"] = (df["status"] != "unclear") & (deadline <= df["downloaded"] - pd.Timedelta(days=SAFETY_MARGIN))
+    stuck = (df["status"] == "open") | ((df["status"] == "decided") & (df["decided_on"] > deadline))
+    df["y"] = np.where(df["labelled"], stuck.astype(int), -1)
+    df["days_to_decision"] = (df["decided_on"] - df["filed"]).dt.days
+    return df.drop(columns=["court_date", "district_date", "date_of_filing", "date_of_decision", "date_last_list"])
+def selection_checks(name, code, df):
+    c = df[df["year"].between(2012, TEST_YEAR)]
+    per_year = c.groupby("year").size()
+    jumps = (per_year / per_year.shift(1)).iloc[1:]
+    known = c[c["status"] != "unclear"]
+    quick = known["days_to_decision"].between(0, 90).groupby(known["year"]).mean()
+    completeness = quick / quick.loc[2013:2016].median()
+    test = c[(c["year"] == TEST_YEAR) & (c["status"] != "unclear")]
+    all_years = df[df["year"].between(2010, TEST_YEAR)]
+    row = {"state": name, "biggest_jump_in_filings": round(float(max(jumps.max(), 1 / jumps.min())), 2),
+           "pct_unclear_status": round(100 * (all_years["status"] == "unclear").mean(), 2),
+           "pct_2017_watched_two_years": round(100 * test["labelled"].mean(), 1),
+           "quick_decisions_2013_vs_normal": round(float(completeness.get(2013, 0)), 2),
+           "quick_decisions_2014_vs_normal": round(float(completeness.get(2014, 0)), 2),
+           "labelled_2017_cases": int((c["year"] == TEST_YEAR).mul(c["labelled"]).sum())}
+    row["no_sudden_jumps"] = bool(((jumps >= 0.5) & (jumps <= 2)).all())
+    row["few_unclear"] = row["pct_unclear_status"] < 5
+    row["2017_followed_long_enough"] = row["pct_2017_watched_two_years"] >= 80
+    row["training_years_complete"] = bool(all(completeness.get(y, 0) >= 0.8 for y in TRAIN_YEARS))
+    row["no_reorganisation"] = code not in REORGANISED
+    row["passes_all"] = all(row[k] for k in ["no_sudden_jumps", "few_unclear", "2017_followed_long_enough",
+                                              "training_years_complete", "no_reorganisation"])
+    return row
+def court_recent_speed(df):
+    """Of the court's cases filed 12-24 months before this case's filing month, the share
+    already decided by the start of that month (used for one idea that did not help)."""
+    known = df[df["status"] != "unclear"]
+    month = df["filed"].dt.to_period("M")
+    out = pd.Series(np.nan, index=df.index)
+    for court, g in known.groupby("court"):
+        g_month, rows = g["filed"].dt.to_period("M"), df.index[df["court"] == court]
+        for m in month.loc[rows].unique():
+            window = (g_month >= m - 24) & (g_month < m - 12)
+            if window.sum() >= 20:
+                out.loc[rows[month.loc[rows] == m]] = (g["decided_on"][window] < m.start_time).mean()
+    return out
+def processed_state(code, df):
+    types = pd.read_csv(EXTRACTED / "keys" / "type_name_key.csv", dtype=str)
+    types = types.assign(year=types["year"].astype(int), type_name=clean_code(types["type_name"]))
+    df = df.assign(type_name=clean_code(df["type_name"])).merge(
+        types.drop_duplicates(["year", "type_name"])[["year", "type_name", "type_name_s"]],
+        on=["year", "type_name"], how="left")
+    purposes = pd.read_csv(EXTRACTED / "keys" / "purpose_name_key.csv", dtype=str)
+    purposes = purposes.assign(year=purposes["year"].astype(int), purpose_name=clean_code(purposes["purpose_name"]))
+    df = df.assign(purpose_name=clean_code(df["purpose_name"])).merge(
+        purposes.drop_duplicates(["year", "purpose_name"])[["year", "purpose_name", "purpose_name_s"]],
+        on=["year", "purpose_name"], how="left")
+    acts = pd.concat([a[a["ddl_case_id"].str[:2] == code] for a in
+                      (pd.read_parquet(f) for f in sorted(EXTRACTED.glob("acts_*.parquet")))])
+    acts = acts.drop_duplicates("ddl_case_id").assign(act=lambda a: clean_code(a["act"]))
+    act_names = pd.read_csv(EXTRACTED / "keys" / "act_key.csv", dtype=str)
+    act_names = act_names.assign(act=clean_code(act_names["act"])).drop_duplicates("act")[["act", "act_s"]]
+    df = df.merge(acts.merge(act_names, on="act", how="left"), on="ddl_case_id", how="left")
+    df["has_act_row"] = df["act"].notna()
+    df = df[df["year"] >= 2010].reset_index(drop=True)
+    features = build_features(df)
+    features["purpose"] = clean_text(df["purpose_name_s"])     # latest hearing's purpose (leak demonstration)
+    out = pd.concat([df[["ddl_case_id", "year", "filed", "decided_on", "status", "labelled", "y",
+                         "days_to_decision", "has_act_row", "downloaded"]], features], axis=1)
+    out["court_recent_speed"] = court_recent_speed(out)
+    out.to_parquet(PROCESSED / f"state_{code}.parquet", index=False)
+    return out
+def data_facts(name, d):
+    show(f"{name}: what the data look like")
+    years = d[d["year"] <= 2017]
+    print(f"cases filed 2010-2017: {len(years):,}; unclear status: {100 * (years['status'] == 'unclear').mean():.1f}%")
+    dl = d.drop_duplicates("court")["downloaded"]
+    print(f"courts' download dates: {dl.min().date()} to {dl.max().date()} (median {dl.median().date()})")
+    lab = d[d["labelled"]]
+    show("share stuck after two years, by filing year (labelled cases)",
+         lab.groupby("year")["y"].agg(cases="size", share_stuck="mean").round(3).reset_index())
+    known = d[d["status"] != "unclear"]
+    show("missing quick cases: share decided within 90 days, by filing year",
+         known["days_to_decision"].between(0, 90).groupby(known["year"]).mean().round(3).reset_index()
+         .rename(columns={"days_to_decision": "share_decided_within_90_days"}))
+    act = lab[lab["year"].between(2012, 2017)].groupby(["year", "has_act_row"])["y"].agg(["size", "mean"]).round(3).unstack()
+    act.columns = [f"{'cases' if a == 'size' else 'share stuck'}, {'with' if b else 'without'} law field"
+                   for a, b in act.columns]
+    show("law filed under was added later: share stuck with and without the field", act.reset_index())
+    bail = lab[lab["case_type"] == "bail"]
+    show("record-keeping: share of bail applications 'stuck', by filing year",
+         bail.groupby("year")["y"].agg(cases="size", share_stuck="mean").round(3).reset_index())
+def figure_1(d):
+    plt.rcParams.update({"font.size": 7.5, "axes.titlesize": 8, "legend.fontsize": 6.5,
+                         "axes.spines.top": False, "axes.spines.right": False, "pdf.fonttype": 42})
+    fig, axes = plt.subplots(1, 3, figsize=(7.0, 2.1), gridspec_kw={"width_ratios": [1.05, 1.0, 1.1]})
+    ax = axes[0]
+    t = np.linspace(0, 8, 200)
+    for year, colour in [(2010, "#d62728"), (2014, "#1f77b4"), (2017, "#ff7f0e")]:
+        c = d[(d["year"] == year) & (d["status"] != "unclear")]
+        days = np.sort(c["days_to_decision"].dropna().to_numpy() / 365.25)
+        ax.plot(t, np.searchsorted(days, t, side="right") / len(c), color=colour, lw=1.4, label=f"filed in {year}")
+    ax.axvline(2, color="k", lw=0.7, ls=":")
+    ax.text(2.1, 0.02, "2 years", fontsize=6.5)
+    ax.annotate("2017 stops: data\nwere collected here", xy=(3.6, 0.6), xytext=(4.0, 0.08), fontsize=6,
+                arrowprops=dict(arrowstyle="->", lw=0.6))
+    ax.set(xlabel="years since filing", ylabel="share of cases decided", ylim=(0, 1),
+           title="(a) How quickly cases get decided")
+    ax.legend(frameon=False, loc="upper right", bbox_to_anchor=(1.0, 1.02))
+    ax = axes[1]
+    lab = d[d["labelled"]].copy()
+    lab["group"] = lab["year"].astype(str)
+    lab.loc[(lab["year"] == 2018) & (lab["filed"].dt.month <= 6), "group"] = "2018H1"
+    order = [str(y) for y in range(2010, 2018)] + ["2018H1"]
+    share = lab.groupby("group")["y"].mean().reindex(order)
+    use = {"incomplete": ("2010", "2011", "2012"), "train": ("2013", "2014"), "unused": ("2015",),
+           "validation": ("2016",), "test": ("2017", "2018H1")}
+    colours = {"incomplete": "#7f7f7f", "train": "#1f77b4", "unused": "#cccccc", "validation": "#ff7f0e",
+               "test": "#d62728"}
+    colour_of = {g: colours[k] for k, gs in use.items() for g in gs}
+    ax.bar(range(len(order)), share.values, color=[colour_of[g] for g in order])
+    ax.set_xticks(range(len(order)), ["10", "11", "12", "13", "14", "15", "16", "17", "18*"])
+    ax.tick_params(axis="x", labelsize=6)
+    ax.set(xlabel="filing year (20__; 18* = Jan-Jun 2018)", ylabel="share still pending after 2 years",
+           ylim=(0, 1), title="(b) Pendency falls over time")
+    from matplotlib.patches import Patch
+    ax.legend(handles=[Patch(color=v, label=k) for k, v in colours.items()], frameon=False, loc="upper right",
+              fontsize=6, handlelength=1, borderaxespad=0.1)
+    ax = axes[2]
+    names = {"bail": "bail application", "criminalmisc": "criminal misc.", "grcase": "police case (GR)",
+             "titlesuit": "title (property) suit", "matrimonialsuit": "matrimonial suit", "complaintcase": "complaint case"}
+    t2 = lab[lab["year"].isin([2013, 2014, 2017]) & lab["case_type"].isin(names)]
+    g = t2.assign(period=np.where(t2["year"] == 2017, "2017", "2013-14")).groupby(["case_type", "period"])["y"].mean().unstack()
+    g = g.reindex(g["2017"].sort_values().index)
+    yy = np.arange(len(g))
+    ax.barh(yy + 0.2, g["2013-14"], height=0.4, color="#1f77b4", label="filed 2013-14")
+    ax.barh(yy - 0.2, g["2017"], height=0.4, color="#d62728", label="filed 2017")
+    ax.set_yticks(yy, [names[c] for c in g.index])
+    ax.set(xlim=(0, 1), xlabel="share still pending after 2 years", title="(c) Case type matters most")
+    ax.legend(frameon=False, loc="lower right", bbox_to_anchor=(1.02, 0.0))
+    fig.tight_layout(w_pad=1.2)
+    fig.savefig(FIGURES / "figure1_data.pdf")
+    plt.close(fig)
+    print("saved figures/figure1_data.pdf")
+def main():
+    t0 = time.time()
+    screened = load_json("screened_states.json")
+    rows = []
+    for code, name in screened.items():
+        print(f"{name}: labelling ...", flush=True)
+        df = add_labels(load_cases(code))
+        rows.append({"code": code, **selection_checks(name, code, df)})
+        del df
+    checks = pd.DataFrame(rows).sort_values(["passes_all", "labelled_2017_cases"], ascending=False)
+    checks.to_csv(RESULTS / "state_selection.csv", index=False)
+    show("Checks used to choose states (fixed before any model was fitted)", checks.drop(columns="code"))
+    passing = checks[checks["passes_all"]]
+    main_state, others = passing.iloc[0]["code"], list(passing.iloc[1:]["code"])
+    save_json({"main": main_state, "others": others, "names": dict(zip(checks["code"], checks["state"]))},
+              "chosen_states.json")
+    show("Chosen", f"main state: {screened[main_state]} (most labelled 2017 cases); "
+                   f"checks repeated in: {', '.join(screened[c] for c in others)}")
+    for code in [main_state] + others:
+        print(f"\n{screened[code]}: building features ...", flush=True)
+        d = processed_state(code, add_labels(load_cases(code)))
+        print(f"saved data/processed/state_{code}.parquet: {len(d):,} cases filed 2010-2018")
+        if code == main_state:
+            data_facts(screened[code], d)
+            figure_1(d)
+        del d
+    print(f"\nDone in {(time.time() - t0) / 60:.0f} minutes.")
+if __name__ == "__main__":
+    main()
+</file>
+
+<file path="common.py">
+"""Shared helpers: paths, labels, features, models and scores."""
+import json
+from pathlib import Path
+import numpy as np
+import pandas as pd
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import average_precision_score, brier_score_loss, log_loss, roc_auc_score
+from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.preprocessing import FunctionTransformer, OneHotEncoder, OrdinalEncoder, StandardScaler
+from sklearn.tree import DecisionTreeClassifier
+ROOT = Path(__file__).resolve().parent
+RAW_ZIP = ROOT / "data" / "raw" / "ddl_justice.zip"
+EXTRACTED = ROOT / "data" / "extracted"
+PROCESSED = ROOT / "data" / "processed"
+RESULTS = ROOT / "results"
+FIGURES = ROOT / "figures"
+for folder in (EXTRACTED, PROCESSED, RESULTS, FIGURES):
+    folder.mkdir(parents=True, exist_ok=True)
+SEED = 678
+TWO_YEARS = 730          # days
+SAFETY_MARGIN = 60       # days subtracted from a court's download date
+# What the model sees (all known on the filing day)
+CATEGORICAL = ["district", "court", "court_type", "case_type", "female_petitioner",
+               "female_defendant", "female_adv_pet", "female_adv_def", "filing_month", "filing_weekday"]
+NUMERIC = ["court_filings_last_365d"]
+FEATURES = CATEGORICAL + NUMERIC
+# Fields that look like filing-day information but were filled in later (used only to show the leak)
+LAW_FIELDS = ["act", "criminal", "ipc_sections", "bailable"]
+LR_PENALTIES = [0.0001, 0.0003, 0.001, 0.003, 0.01, 0.1, 1.0]     # scikit-learn's C: smaller = stronger
+BOOSTING_GRID = [{"learning_rate": lr, "max_leaf_nodes": leaves} for lr in [0.05, 0.2] for leaves in [15, 63]]
+LOOKUP_SMOOTHING = [1, 10, 100]
+# ---------------------------------------------------------------- small utilities
+def show(title, table=None):
+    """Print a heading and (optionally) a table, so every run log reads top to bottom."""
+    print(f"\n=== {title} ===")
+    if table is not None:
+        print(table.to_string(index=False) if isinstance(table, pd.DataFrame) else table)
+def save_json(obj, name):
+    (RESULTS / name).write_text(json.dumps(obj, indent=2, default=str))
+def load_json(name):
+    return json.loads((RESULTS / name).read_text())
+def clean_code(s):
+    return s.astype(str).str.strip().str.replace(r"\.0+$", "", regex=True)
+def clean_text(s, keep_spaces=True):
+    """Lower case, no punctuation: 'O.S.' and 'os' become the same case type."""
+    s = s.fillna("").astype(str).str.lower()
+    s = s.str.replace(r"\b(19|20)\d\d\b", " ", regex=True)
+    s = s.str.replace(r"[^a-z0-9]+", " " if keep_spaces else "", regex=True).str.strip()
+    s = s.str.replace(r"\s+", " ", regex=True)
+    return s.replace("", "missing")
+# ---------------------------------------------------------------- features
+def court_filings_last_365d(court, filed):
+    """How many cases the same court received in the 365 days before each filing."""
+    out = pd.Series(0.0, index=court.index)
+    for _, idx in court.groupby(court).groups.items():
+        t = filed.loc[idx].values.astype("datetime64[D]").astype(np.int64)
+        order = np.argsort(t, kind="stable")
+        ts = t[order]
+        counts = np.empty(len(ts))
+        counts[order] = np.searchsorted(ts, ts, side="left") - np.searchsorted(ts, ts - 365, side="left")
+        out.loc[idx] = counts
+    return out
+def build_features(df):
+    f = pd.DataFrame(index=df.index)
+    f["district"] = df["dist_code"].astype(str)
+    f["court"] = df["dist_code"].astype(str) + "_" + df["court_no"].astype(str)
+    f["court_type"] = clean_text(df["judge_position"])
+    f["case_type"] = clean_text(df["type_name_s"], keep_spaces=False)
+    for c in ["female_petitioner", "female_defendant", "female_adv_pet", "female_adv_def"]:
+        f[c] = df[c].fillna("missing").astype(str)
+    f["filing_month"] = df["filed"].dt.month.astype(str)
+    f["filing_weekday"] = df["filed"].dt.dayofweek.astype(str)
+    f["court_filings_last_365d"] = court_filings_last_365d(f["court"], df["filed"])
+    # law-filed-under fields (leak demonstration only)
+    f["act"] = np.where(df["has_act_row"], clean_text(df["act_s"]), "no act row")
+    f["criminal"] = df["criminal"].fillna("no act row").astype(str)
+    n_ipc = pd.to_numeric(df["number_sections_ipc"], errors="coerce")
+    f["ipc_sections"] = np.select([n_ipc.isna(), n_ipc >= 5], ["none", "5+"], n_ipc.fillna(0).astype(int).astype(str))
+    f["bailable"] = df["bailable_ipc"].fillna("none").astype(str)
+    return f
+# ---------------------------------------------------------------- models
+def lookup_table(train, evaluate, m):
+    """Share stuck among past cases of the same type and district, pulled towards the
+    overall share for small groups: (stuck + m * overall) / (cases + m)."""
+    overall = train["y"].mean()
+    key_train = train["case_type"] + "|" + train["district"]
+    key_eval = evaluate["case_type"] + "|" + evaluate["district"]
+    g = pd.DataFrame({"k": key_train.values, "y": train["y"].values}).groupby("k")["y"].agg(["sum", "size"])
+    rate = (g["sum"] + m * overall) / (g["size"] + m)
+    return key_eval.map(rate).fillna(overall).values
+def logistic_regression(C, categorical=CATEGORICAL, extra_numeric=()):
+    parts = [("categories", OneHotEncoder(handle_unknown="infrequent_if_exist", min_frequency=50), list(categorical)),
+             ("workload", make_pipeline(FunctionTransformer(np.log1p), StandardScaler()), NUMERIC)]
+    if extra_numeric:
+        from sklearn.impute import SimpleImputer
+        parts.append(("extra", make_pipeline(SimpleImputer(strategy="median"), StandardScaler()), list(extra_numeric)))
+    return Pipeline([("prepare", ColumnTransformer(parts)), ("model", LogisticRegression(C=C, max_iter=2000))])
+def gradient_boosting(learning_rate, max_leaf_nodes, max_iter):
+    prepare = ColumnTransformer([
+        ("categories", OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=np.nan,
+                                      min_frequency=50, max_categories=250), CATEGORICAL),
+        ("workload", "passthrough", NUMERIC)])
+    model = HistGradientBoostingClassifier(
+        learning_rate=learning_rate, max_leaf_nodes=max_leaf_nodes, max_iter=max_iter, min_samples_leaf=200,
+        categorical_features=[True] * len(CATEGORICAL) + [False] * len(NUMERIC), early_stopping=False,
+        random_state=SEED)
+    return Pipeline([("prepare", prepare), ("model", model)])
+def tree_or_forest(model):
+    prepare = ColumnTransformer([
+        ("categories", OneHotEncoder(handle_unknown="infrequent_if_exist", min_frequency=50), CATEGORICAL),
+        ("workload", "passthrough", NUMERIC)])
+    return Pipeline([("prepare", prepare), ("model", model)])
+def decision_tree(depth):
+    return tree_or_forest(DecisionTreeClassifier(max_depth=depth, min_samples_leaf=200, random_state=SEED))
+def random_forest(min_leaf):
+    return tree_or_forest(RandomForestClassifier(n_estimators=100, min_samples_leaf=min_leaf, max_features="sqrt",
+                                                 n_jobs=-1, random_state=SEED))
+def boosting_best_rounds(params, train, evaluate, max_rounds=400):
+    """Fit up to max_rounds and keep the round with the lowest validation log loss."""
+    pipe = gradient_boosting(max_iter=max_rounds, **params).fit(train[FEATURES], train["y"])
+    Z = pipe["prepare"].transform(evaluate[FEATURES])
+    best_loss, best_round, best_p = np.inf, 0, None
+    for i, stage in enumerate(pipe["model"].staged_predict_proba(Z), start=1):
+        loss = log_loss(evaluate["y"], stage[:, 1])
+        if loss < best_loss:
+            best_loss, best_round, best_p = loss, i, stage[:, 1].copy()
+    return best_round, best_p
+# ---------------------------------------------------------------- scores
+def scores(y, p, name):
+    y, p = np.asarray(y), np.clip(np.asarray(p, dtype=float), 1e-6, 1 - 1e-6)
+    k = int(round(0.10 * len(y)))
+    top = np.argsort(-p, kind="stable")[:k]
+    return {"model": name, "cases": len(y), "share_stuck": y.mean(), "avg_prediction": p.mean(),
+            "brier": brier_score_loss(y, p), "log_loss": log_loss(y, p),
+            "pr_auc": average_precision_score(y, p), "ranking_score": roc_auc_score(y, p),
+            "stuck_among_top10pct": y[top].mean()}
+def score_table(rows):
+    return pd.DataFrame(rows).round(4)
+def court_bootstrap(y, predictions, courts, n=200):
+    """95% ranges by resampling whole courts (cases in one court are alike)."""
+    rng = np.random.default_rng(SEED)
+    by_court = pd.Series(np.arange(len(y))).groupby(courts).apply(np.array)
+    out = []
+    for b in range(n):
+        idx = np.concatenate([by_court.iloc[i] for i in rng.choice(len(by_court), len(by_court), replace=True)])
+        for name, p in predictions.items():
+            out.append({**scores(y[idx], p[idx], name), "resample": b})
+    return pd.DataFrame(out)
+def load_state(code, columns=None):
+    return pd.read_parquet(PROCESSED / f"state_{code}.parquet", columns=columns)
+</file>
+
+<file path="followup_experiment.py">
+"""Step 4 of 4: what too-short follow-up does to the model (about 1 minute).
+Pretend the main state's records had been downloaded earlier, on a date T, so that the
+2013-14 training cases had only been watched for F = T - filing date days. Three ways to
+label a case that was not yet decided on T:
+  A. count it as stuck
+  B. drop it (if it had been watched for less than two years)
+  C. only use cases watched for two full years (what the paper does)
+Each version trains the same logistic regression; all are scored against the TRUE outcomes
+of a held-out fifth of the 2013-14 cases. The paper's formula says that under rule A the
+average prediction rises by the share of training cases decided after T but within two years.
+Draws Figure 3.
+"""
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from scipy.stats import spearmanr
+from sklearn.model_selection import train_test_split
+from common import FEATURES, FIGURES, RESULTS, SEED, TWO_YEARS, load_json, load_state, logistic_regression, scores, show
+PRETEND_DOWNLOADS = ["2015-01-01", "2015-07-01", "2016-01-01", "2016-07-01", "2017-01-01"]
+RULES = {"A": "not decided yet = stuck", "B": "not decided yet = dropped", "C": "only fully followed cases"}
+def relabel(train, download):
+    F = (pd.Timestamp(download) - train["filed"]).dt.days.values
+    D = train["D"].values
+    y = train["y"].values
+    full = F >= TWO_YEARS
+    return F, {"A": (np.ones(len(train), bool), (D > np.minimum(F, TWO_YEARS)).astype(int)),
+               "B": (full | (D <= F), y),
+               "C": (full, y)}
+def main():
+    settings = load_json("main_state_settings.json")
+    code, C = settings["state"], settings["logistic_regression_C"]
+    d = load_state(code, ["year", "filed", "status", "labelled", "y", "days_to_decision"] + FEATURES)
+    d = d[d["labelled"] & d["year"].isin([2013, 2014])].copy()
+    d["D"] = np.where(d["status"] == "decided", d["days_to_decision"], np.inf)    # never decided = infinity
+    train, held_out = train_test_split(d, test_size=0.2, random_state=SEED, stratify=d["y"])
+    show("Data used", f"labelled cases filed 2013-14: {len(d):,}; training {len(train):,}, "
+                      f"held-out {len(held_out):,} ({100 * held_out['y'].mean():.1f}% truly stuck)")
+    truth = logistic_regression(C).fit(train[FEATURES], train["y"]).predict_proba(held_out[FEATURES])[:, 1]
+    reference = scores(held_out["y"], truth, "trained on true labels")
+    rows = [{**reference, "rule": "truth", "download": "-", "training_cases": len(train), "typical_followup_months": None,
+             "formula_shift": 0.0, "observed_shift": 0.0, "extra_brier": 0.0, "avg_squared_shift": 0.0}]
+    for download in PRETEND_DOWNLOADS:
+        F, rules = relabel(train, download)
+        for rule, (keep, label) in rules.items():
+            if keep.sum() < 5000 or len(np.unique(label[keep])) < 2:
+                print(f"download {download}, rule {rule}: only {keep.sum()} usable cases, skipped")
+                continue
+            q = logistic_regression(C).fit(train[FEATURES][keep], label[keep]).predict_proba(held_out[FEATURES])[:, 1]
+            r = scores(held_out["y"], q, f"rule {rule}")
+            rows.append({**r, "rule": rule, "download": download, "training_cases": int(keep.sum()),
+                         "typical_followup_months": round(float(np.median(F)) / 30.44, 1),
+                         "formula_shift": label[keep].mean() - train["y"].mean(),
+                         "observed_shift": q.mean() - truth.mean(),
+                         "extra_brier": r["brier"] - reference["brier"],
+                         "avg_squared_shift": np.mean((q - truth) ** 2),
+                         "rank_agreement_with_truth": spearmanr(q, truth).statistic})
+    res = pd.DataFrame(rows).round(4)
+    res.to_csv(RESULTS / "followup_experiment.csv", index=False)
+    show("Results (held-out cases, true outcomes)",
+         res[["download", "rule", "training_cases", "typical_followup_months", "formula_shift", "observed_shift",
+              "avg_prediction", "extra_brier", "avg_squared_shift", "brier", "ranking_score", "pr_auc"]])
+    # why the ranking survives: do slow-early case types stay slow at two years?
+    common_types = train["case_type"].value_counts().index[:30]
+    t = train[train["case_type"].isin(common_types)]
+    rank_rows = []
+    for days in [90, 180, 365, 545]:
+        early = (t["D"] > days).groupby(t["case_type"]).mean()
+        late = (t["D"] > TWO_YEARS).groupby(t["case_type"]).mean()
+        gap = (early - late).sort_values(ascending=False)
+        rank_rows.append({"after_days": days, "rank_agreement_across_30_case_types": round(spearmanr(early, late).statistic, 3),
+                          "types_decided_in_between": ", ".join(f"{k} (+{v:.2f})" for k, v in gap.head(3).items())})
+    show("Share undecided after a few months vs after two years, across the 30 commonest case types",
+         pd.DataFrame(rank_rows))
+    plt.rcParams.update({"font.size": 7.5, "axes.titlesize": 8, "legend.fontsize": 6,
+                         "axes.spines.top": False, "axes.spines.right": False, "pdf.fonttype": 42})
+    colours = {"A": "#d62728", "B": "#1f77b4", "C": "#2ca02c"}
+    fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.0))
+    runs = res[res["rule"] != "truth"]
+    for rule, g in runs.groupby("rule"):
+        g = g.sort_values("typical_followup_months")
+        axes[0].plot(g["typical_followup_months"], g["avg_prediction"], marker="o", ms=3, color=colours[rule],
+                     label=f"{rule}: {RULES[rule]}")
+        axes[1].plot(g["typical_followup_months"], g["ranking_score"], marker="o", ms=3, color=colours[rule])
+    a = runs[runs["rule"] == "A"]
+    axes[0].scatter(a["typical_followup_months"], truth.mean() + a["formula_shift"], s=40, facecolors="none",
+                    edgecolors="k", lw=0.7, zorder=3, label="formula's prediction for A")
+    axes[0].axhline(truth.mean(), color="k", ls="--", lw=0.8, label="truth (correct labels)")
+    axes[1].axhline(reference["ranking_score"], color="k", ls="--", lw=0.8)
+    axes[0].set(ylim=(0, 0.8), ylabel="average predicted chance", title="(a) Wrong labels shift the probabilities")
+    axes[1].set(ylabel="ranking score", title="(b) ...but rule A barely changes the ranking")
+    for ax in axes:
+        ax.set_xlabel("typical follow-up of training cases (months)")
+    axes[0].legend(frameon=False, loc="lower right")
+    fig.tight_layout(w_pad=1.5)
+    fig.savefig(FIGURES / "figure3_followup.pdf")
+    plt.close(fig)
+    print("saved figures/figure3_followup.pdf")
+if __name__ == "__main__":
+    main()
+</file>
+
+<file path="prepare_data.py">
+"""Step 1 of 4: take what we need out of the DDL download (about 10 minutes).
+The zip is read as it is (never unzipped). This script
+  1. copies the small code tables (keys) we need,
+  2. looks at 2014 filings to screen states: 100k-300k filings a year, and at least 5% of
+     cases still open (fewer suggests open cases are missing from the data),
+  3. reads every year's case file once, counting cases per state and year for all states,
+     and keeping the full rows of the screened states,
+  4. keeps the law-filed-under rows (acts) of those states' cases.
+Output: data/extracted/  and  results/cases_per_state_and_year.csv
+"""
+import io
+import tarfile
+import time
+import zipfile
+from pathlib import Path
+import pandas as pd
+from common import EXTRACTED, RAW_ZIP, RESULTS, save_json, show
+CASES = "csv/cases/cases.tar.gz"
+ACTS = "csv/acts_sections.tar.gz"
+KEYS = "csv/keys/keys.tar.gz"
+KEY_FILES = ["cases_state_key.csv", "type_name_key.csv", "disp_name_key.csv",
+             "purpose_name_key.csv", "act_key.csv"]
+class ForwardOnly(io.RawIOBase):
+    """Files inside a .tar.gz can only be read front to back; pandas needs to be told."""
+    def __init__(self, f):
+        self.f = f
+    def readable(self):
+        return True
+    def seekable(self):
+        return False
+    def readinto(self, buffer):
+        data = self.f.read(len(buffer))
+        buffer[:len(data)] = data
+        return len(data)
+def csv_chunks(tar, member, chunksize=500_000):
+    stream = io.BufferedReader(ForwardOnly(tar.extractfile(member)), 1 << 20)
+    return pd.read_csv(stream, dtype=str, chunksize=chunksize, keep_default_na=False, na_values=[""])
+def open_tar(zf, name):
+    return tarfile.open(fileobj=zf.open(name), mode="r|gz")
+def extract_keys(zf):
+    (EXTRACTED / "keys").mkdir(exist_ok=True)
+    with open_tar(zf, KEYS) as tar:
+        for m in tar:
+            if Path(m.name).name in KEY_FILES:
+                (EXTRACTED / "keys" / Path(m.name).name).write_bytes(tar.extractfile(m).read())
+    print("code tables saved:", ", ".join(KEY_FILES))
+def screen_states(zf, names):
+    """Screening on 2014 filings."""
+    parts = []
+    with open_tar(zf, CASES) as tar:
+        for m in tar:
+            if Path(m.name).name == "cases_2014.csv":
+                for chunk in csv_chunks(tar, m):
+                    parts.append(chunk.assign(open=chunk["date_of_decision"].isna())
+                                 .groupby("state_code")["open"].agg(["size", "mean"]))
+                break
+    s = pd.concat(parts)
+    s = s.assign(open_cases=s["size"] * s["mean"]).groupby(level=0)[["size", "open_cases"]].sum()
+    s["state"] = s.index.map(names)
+    s["pct_open"] = (100 * s["open_cases"] / s["size"]).round(1)
+    s["passes"] = s["size"].between(100_000, 300_000) & (s["pct_open"] >= 5)
+    s = s.sort_values("size", ascending=False).reset_index()[["state_code", "state", "size", "pct_open", "passes"]]
+    show("Screening states on 2014 filings (100k-300k filings, at least 5% still open)",
+         s.rename(columns={"size": "filings_2014"}))
+    return {r.state_code: r.state for r in s.itertuples() if r.passes}
+def extract_cases(zf, keep):
+    counts = []
+    with open_tar(zf, CASES) as tar:
+        for m in tar:
+            name = Path(m.name).name
+            if not (name.startswith("cases_") and name.endswith(".csv")):
+                continue
+            year, t0, kept = int(name[6:10]), time.time(), 0
+            for old in EXTRACTED.glob(f"cases_{year}_*.parquet"):
+                old.unlink()
+            for i, chunk in enumerate(csv_chunks(tar, m)):
+                counts.append(chunk.assign(open=chunk["date_of_decision"].isna(), year=year)
+                              .groupby(["year", "state_code"])["open"].agg(cases="size", open_cases="sum"))
+                rows = chunk[chunk["state_code"].isin(keep)]
+                if len(rows):
+                    rows.to_parquet(EXTRACTED / f"cases_{year}_{i:03d}.parquet", index=False)
+                    kept += len(rows)
+            print(f"{name}: kept {kept:,} rows of the screened states ({time.time() - t0:.0f} s)")
+    return pd.concat(counts).groupby(level=[0, 1]).sum().reset_index()
+def extract_acts(zf, keep):
+    for old in EXTRACTED.glob("acts_*.parquet"):
+        old.unlink()
+    kept = 0
+    with open_tar(zf, ACTS) as tar:
+        for m in tar:
+            if m.name.endswith("acts_sections.csv"):
+                for i, chunk in enumerate(csv_chunks(tar, m, 2_000_000)):
+                    rows = chunk[chunk["ddl_case_id"].str[:2].isin(keep)]   # case ids start with the state code
+                    rows.to_parquet(EXTRACTED / f"acts_{i:03d}.parquet", index=False)
+                    kept += len(rows)
+    print(f"acts_sections.csv: kept {kept:,} rows")
+def main():
+    t0 = time.time()
+    print(f"Reading {RAW_ZIP}")
+    with zipfile.ZipFile(RAW_ZIP) as zf:
+        extract_keys(zf)
+        names = pd.read_csv(EXTRACTED / "keys" / "cases_state_key.csv", dtype=str)
+        names = names.sort_values("year").groupby("state_code")["state_name"].last().to_dict()
+        keep = screen_states(zf, names)
+        show("States kept for the rest of the analysis", ", ".join(keep.values()))
+        save_json(keep, "screened_states.json")
+        counts = extract_cases(zf, keep)
+        extract_acts(zf, keep)
+    counts["state"] = counts["state_code"].map(names)
+    counts.to_csv(RESULTS / "cases_per_state_and_year.csv", index=False)
+    show(f"All states together: {counts['cases'].sum():,} cases filed 2010-2018",
+         counts.groupby("year")["cases"].sum().reset_index())
+    print(f"\nDone in {(time.time() - t0) / 60:.0f} minutes.")
+if __name__ == "__main__":
+    main()
+</file>
+
+<file path="README.md">
+# Will this case still be pending in two years?
+
+Code for my ES 678 project: predicting, on the day a case is filed in an Indian district court, whether it will still be undecided two years later. Running it reproduces every number, table and figure in the paper.
+
+In short, I train on cases filed in 2013–14 and test on cases filed in 2017. That's what someone building this tool on 1 January 2017 could actually have done. The main state is West Bengal, and the same steps are repeated for Delhi, Assam and Uttarakhand.
+
+## What you need
+
+- Python 3.12
+- About 6 GB of free disk space: 5.1 GB for the download, plus about 1 GB of extracted files
+- About 8 GB of free RAM (labelling the bigger states is the hungriest part)
+- About 40 minutes, most of it the first two scripts
+
+Install the packages (the versions are pinned so the numbers come out the same):
+
+```
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Getting the data
+
+The data come from the Development Data Lab's judicial data: https://www.devdatalab.org/judicial-data. That page has a Dropbox link to the whole data folder. Download it as a single zip (about 5.1 GB) and save it as:
+
+```
+data/raw/ddl_justice.zip
+```
+
+**Don't unzip it.** The code reads straight from the zip. From the command line:
+
+```
+mkdir -p data/raw
+curl -L -o data/raw/ddl_justice.zip "https://www.dropbox.com/sh/hkcde3z2l1h9mq1/AADRe-BuBQ92ozAJiG7YERdCa?dl=1"
+```
+
+The data are free for non-commercial use (CC BY-NC-SA 4.0), but they aren't mine to redistribute, so they aren't in this repository. If you use them, cite: Ash et al., "In-group bias in the Indian judiciary: Evidence from 5 million criminal cases", *The Review of Economics and Statistics*, 2025.
+
+## Running it
+
+Run the four scripts in order. Each one prints what it's doing and exactly which data it uses (states, filing years, number of cases and share stuck), so the log reads top to bottom.
+
+```
+python prepare_data.py          # ~10 min
+python build_dataset.py         # ~10 min
+python run_models.py            # ~15 min
+python followup_experiment.py   # ~1 min
+```
+
+1. **`prepare_data.py`** reads the zip. It counts cases in every state, then screens states using the 2014 filings: 100k–300k filings a year, and at least 5% of cases still open. Fewer open cases suggests they're missing from the data. It keeps the case rows of the states that pass.
+2. **`build_dataset.py`** works out which cases were stuck:
+   - **Status:** each case is decided (has a decision date), open (no decision date, outcome recorded as missing) or unclear (dropped).
+   - **Download dates:** each court was downloaded at a different time, so its date is estimated from the latest hearings of its open cases.
+   - **Labels:** a case only gets a label if it was watched for two full years (plus a 60-day safety margin) before that date.
+   - **Choosing states:** it applies the checks used to choose states, which were all fixed before any model was fitted, and builds the features for the four states that pass.
+   - **Data facts:** it prints the facts quoted in the paper's data section, such as the missing quick cases in early years, the law-filed-under field that was filled in later, and the bail record-keeping change.
+3. **`run_models.py`** does all the modelling:
+   - **West Bengal:** chooses settings by training on 2013 and checking on 2016, re-checks them on a second year (train 2012, check 2015), then scores 2017 once.
+   - **The other three states:** runs the same procedure.
+   - **Comparisons:** scores the same model on a shuffled split, and tries the two extra ideas that didn't pan out.
+   - **Model families:** the lookup table, logistic regression, gradient boosting, a single tree and a random forest, plus the two "leak" demonstrations.
+4. **`followup_experiment.py`** is the graduate part. It pretends the data had been downloaded earlier, relabels the training cases three ways, and checks the paper's formula against what actually happens.
+
+`common.py` holds the bits the scripts share: features, models and scores.
+
+## Where things end up
+
+- **`figures/`**: the three figures in the paper
+  - `figure1_data.pdf`: how quickly cases get decided, pendency over time, case types
+  - `figure2_four_states.pdf`: honest vs shuffled testing, and predicted vs actual, in four states
+  - `figure3_followup.pdf`: the follow-up experiment
+- **`results/`**: every table as a CSV. `table1.csv` is Table 1 of the paper.
+- **`data/`**: the download and the intermediate files (not in the repository)
+
+## Where each paper number comes from
+
+| In the paper | Printed by | Saved as |
+|---|---|---|
+| 81 million cases, the screening of states | `prepare_data.py` | `results/cases_per_state_and_year.csv` |
+| Checks used to choose states, download dates, unclear status, the three data traps, Figure 1 | `build_dataset.py` | `results/state_selection.csv`, `figures/figure1_data.pdf` |
+| Table 1, the second check year, 7 in 10 flagged first, the leaks, the discarded models | `run_models.py` | `results/table1.csv`, `results/main_state_*.csv` |
+| Four states and shuffled testing (Figure 2) | `run_models.py` | `results/four_states_summary.csv`, `figures/figure2_four_states.pdf` |
+| Court speed and first-year shift ("did not help reliably") | `run_models.py` | `results/idea1_court_speed.csv`, `results/idea2_first_year_shift.csv` |
+| Follow-up experiment and Figure 3 | `followup_experiment.py` | `results/followup_experiment.csv`, `figures/figure3_followup.pdf` |
+
+Everything is deterministic (random seed 678), so a rerun gives the same numbers.
+</file>
+
+<file path="requirements.txt">
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==19.0.1
+scipy==1.15.3
+scikit-learn==1.6.1
+matplotlib==3.10.3
+</file>
+
+<file path="run_models.py">
+"""Step 3 of 4: all the models in the paper (about 15 minutes).
+Imagine building the tool on 1 January 2017: two-year outcomes are then known only for cases
+filed up to 2014. So for the main state (West Bengal):
+  * settings are chosen by training on 2013 and checking on 2016 (and re-checked by training
+    on 2012 and checking on 2015);
+  * the chosen settings are refitted on 2013-14 and scored once on 2017.
+The same procedure is repeated for the other states that passed the checks, the same model
+is also scored on a shuffled split, and two extra ideas are tried. Draws Figure 2.
+"""
+import time
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from common import (BOOSTING_GRID, FEATURES, FIGURES, LAW_FIELDS, LOOKUP_SMOOTHING, LR_PENALTIES, RESULTS, SEED,
+                    CATEGORICAL, boosting_best_rounds, court_bootstrap, decision_tree, gradient_boosting, load_json,
+                    load_state, logistic_regression, lookup_table, random_forest, save_json, score_table, scores,
+                    show)
+COLUMNS = (["year", "filed", "decided_on", "status", "labelled", "y", "court_recent_speed", "purpose"]
+           + FEATURES + LAW_FIELDS)
+def describe(name, part):
+    return f"{name}: {len(part):,} labelled cases filed in {'+'.join(map(str, sorted(part['year'].unique())))}, " \
+           f"{100 * part['y'].mean():.1f}% stuck"
+def tune(train, check, with_trees=False):
+    """Try every model on the checking year; each family keeps its setting with the lowest log loss."""
+    rows, best = [scores(check["y"], np.full(len(check), train["y"].mean()), "same chance for everyone")], {}
+    def keep(family, setting, row):
+        rows.append(row)
+        if family not in best or row["log_loss"] < best[family]["log_loss"]:
+            best[family] = {"setting": setting, "log_loss": row["log_loss"], "row": row}
+    for m in LOOKUP_SMOOTHING:
+        keep("lookup", m, scores(check["y"], lookup_table(train, check, m), f"lookup table, smoothing {m}"))
+    for C in LR_PENALTIES:
+        p = logistic_regression(C).fit(train[FEATURES], train["y"]).predict_proba(check[FEATURES])[:, 1]
+        keep("logistic regression", C, scores(check["y"], p, f"logistic regression, C={C}"))
+    for params in BOOSTING_GRID:
+        rounds, p = boosting_best_rounds(params, train, check)
+        keep("gradient boosting", {**params, "max_iter": rounds},
+             scores(check["y"], p, f"gradient boosting, step {params['learning_rate']}, "
+                                   f"{params['max_leaf_nodes']} leaves, best after {rounds} rounds"))
+    if with_trees:
+        for depth in [3, 6, 10, 15]:
+            p = decision_tree(depth).fit(train[FEATURES], train["y"]).predict_proba(check[FEATURES])[:, 1]
+            keep("single tree", depth, scores(check["y"], p, f"single tree, depth {depth}"))
+        for leaf in [50, 500]:
+            p = random_forest(leaf).fit(train[FEATURES], train["y"]).predict_proba(check[FEATURES])[:, 1]
+            keep("random forest", leaf, scores(check["y"], p, f"random forest, 100 trees, min leaf {leaf}"))
+    chosen = min([f for f in best if f != "lookup"], key=lambda f: best[f]["log_loss"])
+    return score_table(rows), best, chosen
+def test_once(train, test, best):
+    predictions = {
+        "same chance for everyone": np.full(len(test), train["y"].mean()),
+        "lookup table": lookup_table(train, test, best["lookup"]["setting"]),
+        "logistic regression": logistic_regression(best["logistic regression"]["setting"])
+        .fit(train[FEATURES], train["y"]).predict_proba(test[FEATURES])[:, 1],
+        "gradient boosting": gradient_boosting(**best["gradient boosting"]["setting"])
+        .fit(train[FEATURES], train["y"]).predict_proba(test[FEATURES])[:, 1],
+    }
+    table = score_table([scores(test["y"], p, name) for name, p in predictions.items()])
+    boot = court_bootstrap(test["y"].values, predictions, test["court"].values)
+    lr = boot[boot["model"] == "logistic regression"].set_index("resample")
+    lk = boot[boot["model"] == "lookup table"].set_index("resample")
+    diff = pd.DataFrame({m: {"difference": table.set_index("model").loc["logistic regression", m]
+                                           - table.set_index("model").loc["lookup table", m],
+                             "95% range": f"{(lr[m] - lk[m]).quantile(0.025):+.4f} to {(lr[m] - lk[m]).quantile(0.975):+.4f}"}
+                         for m in ["brier", "pr_auc"]}).T.reset_index().rename(columns={"index": "score"})
+    return table, diff, predictions
+def shuffled_vs_honest(labelled, C, honest_test_prediction, test):
+    pool = labelled[labelled["year"].between(2013, 2017)]
+    train, check = train_test_split(pool, test_size=0.2, random_state=SEED, stratify=pool["y"])
+    p = logistic_regression(C).fit(train[FEATURES], train["y"]).predict_proba(check[FEATURES])[:, 1]
+    honest = scores(test["y"], honest_test_prediction, "honest: train 2013-14, test 2017")
+    shuffled = scores(check["y"], p, "shuffled: random 20% of 2013-17 cases")
+    return score_table([honest, shuffled])
+def main_state(code, name):
+    d = load_state(code, COLUMNS)
+    lab = d[d["labelled"] & (d["year"] >= 2012)]
+    train13, check16, train1314, test17 = (lab[lab["year"] == 2013], lab[lab["year"] == 2016],
+                                           lab[lab["year"].isin([2013, 2014])], lab[lab["year"] == 2017])
+    show(f"{name}: data used")
+    for label, part in [("choosing settings, train", train13), ("choosing settings, check", check16),
+                        ("final model, train", train1314), ("final test", test17)]:
+        print("  " + describe(label, part))
+    table16, best, chosen = tune(train13, check16, with_trees=True)
+    C = best["logistic regression"]["setting"]
+    leaks = []
+    for label, cols in [("+ purpose of latest hearing", CATEGORICAL + ["purpose"]), ("+ law filed under", CATEGORICAL + LAW_FIELDS)]:
+        p = logistic_regression(C, categorical=cols).fit(train13[cols + ["court_filings_last_365d"]], train13["y"]) \
+            .predict_proba(check16[cols + ["court_filings_last_365d"]])[:, 1]
+        leaks.append(scores(check16["y"], p, f"LEAK: logistic regression {label}"))
+    table16 = pd.concat([table16, score_table(leaks)])
+    table16.to_csv(RESULTS / "main_state_validation_2016.csv", index=False)
+    show(f"{name}: choosing settings (train 2013, check 2016)", table16)
+    show("Chosen", f"{chosen} (lowest log loss on 2016); logistic regression penalty C={C}; "
+                   f"lookup smoothing {best['lookup']['setting']}; boosting {best['gradient boosting']['setting']}")
+    train12, check15 = lab[lab["year"] == 2012], lab[lab["year"] == 2015]
+    show("Second check year", describe("train", train12) + "\n  " + describe("check", check15))
+    _, best15, chosen15 = tune(train12, check15)
+    show(f"{name}: second check year (train 2012, check 2015) - best of each family",
+         pd.DataFrame([{"family": f, "best setting": str(b["setting"]), "log_loss": round(b["log_loss"], 4)}
+                       for f, b in best15.items()]))
+    print(f"chosen on the second check year: {chosen15}")
+    test_table, diff, predictions = test_once(train1314, test17, best)
+    test_table.to_csv(RESULTS / "main_state_test_2017.csv", index=False)
+    show(f"{name}: final test on 2017 filings (scored once)", test_table)
+    show("logistic regression minus lookup table (95% ranges from resampling courts)", diff)
+    families = ["lookup", "logistic regression", "gradient boosting"]
+    paper_table = pd.DataFrame({
+        "model": ["same chance for everyone", "lookup table", "logistic regression", "gradient boosting"],
+        "check 2016 brier": [table16.iloc[0]["brier"]] + [best[f]["row"]["brier"] for f in families],
+        "check 2016 pr_auc": [table16.iloc[0]["pr_auc"]] + [best[f]["row"]["pr_auc"] for f in families],
+        "test 2017 brier": test_table["brier"].values,
+        "test 2017 pr_auc": test_table["pr_auc"].values,
+    })
+    paper_table.round(3).to_csv(RESULTS / "table1.csv", index=False)
+    show("Table 1 of the paper", paper_table.round(3))
+    shuffle = shuffled_vs_honest(lab, C, predictions["logistic regression"], test17)
+    show(f"{name}: honest vs shuffled testing (same logistic regression)", shuffle)
+    save_json({"state": code, "logistic_regression_C": C}, "main_state_settings.json")
+    return d, C, shuffle, test_table
+def other_state(code, name):
+    d = load_state(code, COLUMNS)
+    lab = d[d["labelled"] & (d["year"] >= 2012)]
+    train13, check16, train1314, test17 = (lab[lab["year"] == 2013], lab[lab["year"] == 2016],
+                                           lab[lab["year"].isin([2013, 2014])], lab[lab["year"] == 2017])
+    show(f"{name}: data used")
+    for label, part in [("choosing settings, train", train13), ("choosing settings, check", check16),
+                        ("final model, train", train1314), ("final test", test17)]:
+        print("  " + describe(label, part))
+    table16, best, chosen = tune(train13, check16)
+    table16.to_csv(RESULTS / f"state_{code}_validation_2016.csv", index=False)
+    print(f"chosen on 2016: {chosen}; logistic regression C={best['logistic regression']['setting']}; "
+          f"lookup smoothing {best['lookup']['setting']}")
+    test_table, diff, predictions = test_once(train1314, test17, best)
+    test_table.to_csv(RESULTS / f"state_{code}_test_2017.csv", index=False)
+    show(f"{name}: final test on 2017 filings", test_table)
+    show("logistic regression minus lookup table (95% ranges from resampling courts)", diff)
+    shuffle = shuffled_vs_honest(lab, best["logistic regression"]["setting"], predictions["logistic regression"], test17)
+    show(f"{name}: honest vs shuffled testing", shuffle)
+    return shuffle, test_table
+def extra_ideas(d, name, C_main):
+    """Two later ideas, both tested after the 2017 test had been seen, so 2018 Jan-Jun cases
+    (never looked at before) serve as the fresh test for the first one."""
+    lab = d[d["labelled"] & (d["year"] >= 2014)]
+    early18 = lab[(lab["year"] == 2018) & (lab["filed"].dt.month <= 6)]
+    show(f"{name}: idea 1, the court's recent speed (fresh test on Jan-Jun 2018 filings)")
+    print("  " + describe("choosing settings, train", lab[lab["year"] == 2014]))
+    print("  " + describe("choosing settings, check", lab[lab["year"] == 2017]))
+    print("  " + describe("final model, train", lab[lab["year"].isin([2014, 2015])]))
+    print("  " + describe("fresh test", early18))
+    variants = {"without court speed": (), "with court speed": ("court_recent_speed",)}
+    best_C, rows = {}, []
+    tr, ck = lab[lab["year"] == 2014], lab[lab["year"] == 2017]
+    for v, extra in variants.items():
+        losses = {}
+        for C in LR_PENALTIES[:-1]:
+            p = logistic_regression(C, extra_numeric=extra).fit(tr[FEATURES + list(extra)], tr["y"]) \
+                .predict_proba(ck[FEATURES + list(extra)])[:, 1]
+            losses[C] = scores(ck["y"], p, v)["log_loss"]
+        best_C[v] = min(losses, key=losses.get)
+    tr = lab[lab["year"].isin([2014, 2015])]
+    preds = {"lookup table": lookup_table(tr, early18, 100)}
+    for v, extra in variants.items():
+        preds[f"logistic regression {v}"] = logistic_regression(best_C[v], extra_numeric=extra) \
+            .fit(tr[FEATURES + list(extra)], tr["y"]).predict_proba(early18[FEATURES + list(extra)])[:, 1]
+    t = score_table([scores(early18["y"], p, m) for m, p in preds.items()])
+    boot = court_bootstrap(early18["y"].values, preds, early18["court"].values)
+    a = boot[boot["model"] == "logistic regression with court speed"].set_index("resample")["brier"]
+    b = boot[boot["model"] == "logistic regression without court speed"].set_index("resample")["brier"]
+    show(f"settings chosen on 2017: C = {best_C}", t)
+    print(f"Brier with minus without court speed: {t.iloc[2]['brier'] - t.iloc[1]['brier']:+.4f} "
+          f"(95% range {(a - b).quantile(0.025):+.4f} to {(a - b).quantile(0.975):+.4f})")
+    t.to_csv(RESULTS / "idea1_court_speed.csv", index=False)
+    show(f"{name}: idea 2, shift predictions by how much faster recent cases were decided in their first year")
+    known = d[d["status"] != "unclear"].copy()
+    known["open_after_1y"] = ~((known["status"] == "decided") & (known["decided_on"] <= known["filed"] + pd.Timedelta(days=365)))
+    rows = []
+    for label, train_years, recent, test_mask, C in [
+            ("2016", [2013], 2014, lab["year"] == 2016, C_main),
+            ("2017", [2013, 2014], 2015, lab["year"] == 2017, C_main),
+            ("2018 Jan-Jun", [2014, 2015], 2016, (lab["year"] == 2018) & (lab["filed"].dt.month <= 6),
+             best_C["without court speed"])]:
+        tr = d[d["labelled"] & d["year"].isin(train_years)]
+        te = lab[test_mask]
+        q = logistic_regression(C).fit(tr[FEATURES], tr["y"]).predict_proba(te[FEATURES])[:, 1]
+        old = known[known["year"].isin(train_years)]["open_after_1y"].mean()
+        new = known[known["year"] == recent]["open_after_1y"].mean()
+        shift = np.log(new / (1 - new)) - np.log(old / (1 - old))
+        q2 = 1 / (1 + np.exp(-(np.log(q / (1 - q)) + shift)))
+        print(f"predicting {label}: open after one year {old:.3f} (training years) -> {new:.3f} ({recent}); "
+              f"actually stuck {te['y'].mean():.3f}")
+        rows += [{"year predicted": label, **scores(te["y"], q, "logistic regression")},
+                 {"year predicted": label, **scores(te["y"], q2, "logistic regression, shifted")}]
+    t2 = score_table(rows)[["year predicted", "model", "share_stuck", "avg_prediction", "brier", "pr_auc"]]
+    show("idea 2 results", t2)
+    t2.to_csv(RESULTS / "idea2_first_year_shift.csv", index=False)
+def figure_2(rows):
+    r = pd.DataFrame(rows)
+    x = np.arange(len(r))
+    plt.rcParams.update({"font.size": 7.5, "axes.titlesize": 8, "legend.fontsize": 6,
+                         "axes.spines.top": False, "axes.spines.right": False, "pdf.fonttype": 42})
+    fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.05))
+    ax = axes[0]
+    ax.bar(x - 0.18, r["honest"], width=0.36, color="#d62728", label="honest: train on past, test on future")
+    ax.bar(x + 0.18, r["shuffled"], width=0.36, color="#7f7f7f", label="shuffled: random 20% of all years")
+    ax.axhline(0.5, color="k", lw=0.7, ls=":")
+    ax.text(len(r) - 0.55, 0.505, "coin flip", fontsize=6, ha="right", va="bottom")
+    ax.set_xticks(x, r["state"])
+    ax.set(ylim=(0.45, 0.95), ylabel="ranking score", title="(a) Ranking: useful everywhere, flattered by shuffling")
+    ax.legend(frameon=False, loc="upper left")
+    ax = axes[1]
+    ax.bar(x, r["predicted"], width=0.5, color="#ff7f0e", label="model's average prediction")
+    ax.scatter(x, r["actual"], marker="_", s=500, color="k", lw=2, zorder=3, label="actually stuck")
+    for xi, (p, a) in enumerate(zip(r["predicted"], r["actual"])):
+        ax.text(xi, max(p, a) + 0.03, "too high" if p > a + 0.03 else "too low" if p < a - 0.03 else "about right",
+                ha="center", fontsize=6)
+    ax.set_xticks(x, r["state"])
+    ax.set(ylim=(0, 0.82), ylabel="share stuck after 2 years", title="(b) Probabilities drift with each state's trend")
+    ax.legend(frameon=False, loc="upper center", ncol=2)
+    fig.tight_layout(w_pad=1.5)
+    fig.savefig(FIGURES / "figure2_four_states.pdf")
+    plt.close(fig)
+    print("saved figures/figure2_four_states.pdf")
+def main():
+    t0 = time.time()
+    chosen = load_json("chosen_states.json")
+    names = chosen["names"]
+    fig_rows = []
+    d, C, shuffle, test_table = main_state(chosen["main"], names[chosen["main"]])
+    lr = test_table.set_index("model").loc["logistic regression"]
+    fig_rows.append({"state": names[chosen["main"]] + "\n(main)", "honest": shuffle.iloc[0]["ranking_score"],
+                     "shuffled": shuffle.iloc[1]["ranking_score"], "predicted": lr["avg_prediction"],
+                     "actual": lr["share_stuck"]})
+    extra_ideas(d, names[chosen["main"]], C)
+    del d
+    for code in chosen["others"]:
+        shuffle, test_table = other_state(code, names[code])
+        lr = test_table.set_index("model").loc["logistic regression"]
+        fig_rows.append({"state": names[code], "honest": shuffle.iloc[0]["ranking_score"],
+                         "shuffled": shuffle.iloc[1]["ranking_score"], "predicted": lr["avg_prediction"],
+                         "actual": lr["share_stuck"]})
+    summary = pd.DataFrame(fig_rows)
+    summary.to_csv(RESULTS / "four_states_summary.csv", index=False)
+    show("Figure 2 data: four states, test year 2017", summary.assign(state=summary["state"].str.replace("\n", " ")).round(3))
+    figure_2(fig_rows)
+    print(f"\nDone in {(time.time() - t0) / 60:.0f} minutes.")
+if __name__ == "__main__":
+    main()
+</file>
+
+</files>

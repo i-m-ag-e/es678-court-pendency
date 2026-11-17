@@ -1,0 +1,10 @@
+code,state,biggest_jump_in_filings,pct_unclear_status,pct_2017_watched_two_years,quick_decisions_2013_vs_normal,quick_decisions_2014_vs_normal,labelled_2017_cases,no_sudden_jumps,few_unclear,2017_followed_long_enough,training_years_complete,no_reorganisation,passes_all
+16,West Bengal,1.5,1.14,98.4,0.97,0.94,434829,True,True,True,True,True,True
+26,Delhi,1.47,0.1,98.8,1.0,1.0,382296,True,True,True,True,True,True
+06,Assam,1.38,0.31,99.2,1.02,0.96,211614,True,True,True,True,True,True
+15,Uttarakhand,1.34,0.2,98.0,0.98,1.23,115248,True,True,True,True,True,True
+02,Andhra Pradesh,1.26,0.05,99.5,0.72,0.92,307510,True,True,True,False,False,False
+11,Orissa,1.31,1.42,99.3,0.55,0.77,285376,True,True,True,False,True,False
+29,Telangana,1.24,0.12,99.8,0.98,1.01,228052,True,True,True,True,False,False
+18,Chhattisgarh,2.19,2.4,98.2,0.22,0.92,180266,False,True,True,False,True,False
+07,Jharkhand,1.34,0.28,99.4,0.76,0.94,173909,True,True,True,False,True,False

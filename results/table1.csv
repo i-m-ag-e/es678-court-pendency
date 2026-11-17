@@ -1,0 +1,5 @@
+model,check 2016 brier,check 2016 pr_auc,test 2017 brier,test 2017 pr_auc
+same chance for everyone,0.252,0.497,0.258,0.441
+lookup table,0.214,0.655,0.226,0.663
+logistic regression,0.209,0.693,0.224,0.638
+gradient boosting,0.21,0.652,0.22,0.58
